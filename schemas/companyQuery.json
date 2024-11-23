@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [],
+    "properties": {
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+                "Dow Chemical"
+            ]
+        },
+        "minEmployees": {
+            "type": "integer",
+            "default": 0,
+            "title": "The minEmployees Schema",
+            "examples": [
+                1
+            ]
+        },
+        "maxEmployees": {
+            "type": "integer",
+            "default": 0,
+            "title": "The maxEmployees Schema",
+            "examples": [
+                2
+            ]
+        }
+    },
+    "examples": [{
+        "name": "Dow Chemical",
+        "minEmployees": 1,
+        "maxEmployees": 2
+    }],
+    "maxProperties": 3,
+    "minProperties": 1,
+    "additionalProperties": false
+}
